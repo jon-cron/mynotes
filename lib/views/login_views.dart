@@ -82,4 +82,3 @@ class _LoginViewState extends State<LoginView> {
     );
   }
 }
-// NOTE stuff
