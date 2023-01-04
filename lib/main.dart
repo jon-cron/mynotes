@@ -1,4 +1,13 @@
 import 'package:firebase_core/firebase_core.dart';
+// FIXME to enable firebase you must write the following lines in the terminal
+// flutter pub add firebase_core
+// flutter pub add firebase_auth
+// flutter pub add cloud_firestore
+// flutter pub add firebase_analytics
+// npm instal -g firebase-tools
+// firebase login and follow the link
+// dart pub global active flutterfire_cli
+// flutterfire configure
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mynotes/consts/route.dart';
@@ -22,7 +31,7 @@ void main() {
     routes: {
       loginRoute: (context) => const LoginView(),
       registerRoute: (context) => const RegisterView(),
-      '/verifyEmail/': (context) => const VerifyEmailView(),
+      verifyEmailRoute: (context) => const VerifyEmailView(),
       notesRoute: (context) => const NotesView()
     },
     // home: const LoginView(),
