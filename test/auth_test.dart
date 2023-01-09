@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:mynotes/services/auth/auth_exceptions.dart';
 import 'package:mynotes/services/auth/auth_provider.dart';
 import 'package:mynotes/services/auth/auth_user.dart';
@@ -28,7 +26,7 @@ void main() {
         await provider.initialize();
         expect(provider.isInitialized, true);
       },
-      timeout: const Timeout(const Duration(seconds: 2)),
+      timeout: const Timeout(Duration(seconds: 2)),
     );
     test('Create user should delegate to lonIn function', () async {
       final badEmailUser = provider.createUser(

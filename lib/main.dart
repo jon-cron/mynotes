@@ -1,4 +1,4 @@
-// FIXME to enable firebase you must write the following lines in the terminal
+// SECTION to enable firebase you must write the following lines in the terminal
 // flutter pub add firebase_core
 // flutter pub add firebase_auth
 // flutter pub add cloud_firestore
@@ -14,7 +14,6 @@ import 'package:mynotes/views/login_views.dart';
 import 'package:mynotes/views/notes_view.dart';
 import 'package:mynotes/views/register_view.dart';
 import 'package:mynotes/views/verify_email_view.dart';
-import 'firebase_options.dart';
 // NOTE using show only brings in a certain part of the import instead of the whole thing
 // NOTE using 'as' alias out where log is coming from.
 import 'dart:developer' as devtools show log;
